@@ -2,14 +2,18 @@
 using namespace std;
 int main()
 {
-	int n; cin >> n;
-	char d;
-	cin >> d;
-	string s;
-	s.append(n, d);
-	
-	for(int i = 0; i<n; i++)
+
+	int n, a = 0; cin >> n;
+	char s[n];
+	cin >> s;
+	for(int  i= 0; i<n-1; i++)
 	{
-		cout<< s[i];
+		if(s[i] == s[i+1])
+		{
+			a++;
+		}
 	}
+	cout<<a<<"\n";
+
+return 0;
 }
